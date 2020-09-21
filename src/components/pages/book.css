@@ -1,0 +1,16 @@
+.all {
+    display: flex;
+}
+.books {
+    justify-content: center;
+    text-align: center;
+    width: 55%;
+
+}
+
+.image {
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 400px;
+    height: 493px;
+}

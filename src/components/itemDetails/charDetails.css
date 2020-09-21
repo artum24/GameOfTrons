@@ -1,0 +1,11 @@
+.select-error {
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+}
+
+.item {
+    justify-content: space-between;
+    display: flex;
+}
+

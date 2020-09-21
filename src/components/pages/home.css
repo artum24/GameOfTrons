@@ -1,0 +1,63 @@
+.main {
+    /* background: url(`/process.env.PUBLIC_URL` + `/img/main.jpg`); */
+    margin:0px;
+    padding:0px;
+    display: flex;
+    /* process.env.PUBLIC_URL + /img/book.jpg) */
+
+}
+
+.title {
+    margin-left: 20px;
+    /* text-align: center; */
+    margin-top: 15px;
+    font-size: 36px;
+}
+
+.main-image {
+    width: 300px;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+.buttonW {
+    margin-top: -5px;
+    height: 40px;
+    text-align: center;
+    width: 200px;
+}
+.play {
+    width: 30px;
+    margin-right: 5px;
+}
+.short-info {
+    margin-top: 28px;
+    font-family: 'Gotu', sans-serif;
+
+}
+
+.list {
+    list-style: none;
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+.about {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+p {
+    margin-left: 15px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+@media(max-Width: 490px) {
+    .main {
+        display: block;
+    }
+}
