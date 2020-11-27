@@ -1,8 +1,7 @@
 import React from 'react';
-import ItemList from '../itemList';
-import gotService from '../../services/gotService';
 import {withRouter} from 'react-router-dom';
-import './book.css';
+import gotService from '../services/gotService';
+import ItemList from '../components/itemList';
 
 function BookPage({history}) {
     let gotservice = new gotService();

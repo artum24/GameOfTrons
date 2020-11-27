@@ -1,7 +1,6 @@
 import React  from 'react';
 import {Button} from 'reactstrap';
 import Video from './video/Video';
-import './home.css';
 
 export default function HomePage() {
     return (
@@ -16,7 +15,7 @@ export default function HomePage() {
                             <span>Watch trailer</span>
                         </a>
                     </Button>{' '}                
-                    </div>
+                </div>
                 <div className='short-info'>
                     <ul className='list'>
                         <li><b>Ratings: </b> 9.5</li>
@@ -30,7 +29,8 @@ export default function HomePage() {
                 </div>
             </div>
             <h2 className='about'>What's "Game of Thrones" about?</h2>
-            <p>The series Game of Thrones is based on a series of novels
+            <p>
+                The series Game of Thrones is based on a series of novels
                 by George Martin "The Song of Ice and Fire". 
                 The intertwining of cruel and sophisticated intrigue, 
                 great acting, exciting imaginative shooting, these are 
@@ -44,7 +44,8 @@ export default function HomePage() {
                 After all, no one notices the revival of the great evil 
                 in the North, and so far only the Wall protects people 
                 living south of it. But even here is a place of nobility 
-                and compassion.</p>
+                and compassion.
+            </p>
             <Video/>
         </div>
     )

@@ -1,11 +1,12 @@
 import React, { useState} from 'react';
-import ItemList from '../itemList';
-import ItemDetails, {Field} from '../itemDetails';
-import gotService from '../../services/gotService';
-import RowBlock from '../rowBlock';
-import {Col, Row, Button} from 'reactstrap';
-import RandomChar from '../randomChar';
+import gotService from '../services/gotService';
 
+import ItemList from '../components/itemList';
+import ItemDetails, {Field} from '../components/itemDetails';
+import RowBlock from '../components/rowBlock';
+import RandomChar from '../components/randomChar';
+
+import {Col, Row, Button} from 'reactstrap';
 
 export default function CharacterPage() {
     let gotservice = new gotService();
@@ -52,6 +53,6 @@ export default function CharacterPage() {
             </Row>
 
             <RowBlock left={itemList} right={itemDetails} />
-            </div>
+        </div>
     )
 }

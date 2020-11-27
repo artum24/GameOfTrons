@@ -1,10 +1,11 @@
 import React from 'react';
-import {Container} from 'reactstrap';
-import Header from '../header';
-import {CharacterPage,BookPage,HousePage, BooksItem, HomePage} from '../pages';
-import ErrorMessage from '../errorMessage';
-import './app.css';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
+
+import Header from '../header';
+import {CharacterPage,BookPage,HousePage, BooksItem, HomePage} from '../../pages';
+import ErrorMessage from '../errorMessage';
+
+import {Container} from 'reactstrap';
 
 export default class App extends React.Component {
 

@@ -1,9 +1,9 @@
 import React, { useState} from 'react';
-import ItemList from '../itemList';
-import ItemDetails, {Field} from '../itemDetails';
-import gotService from '../../services/gotService';
-import RowBlock from '../rowBlock';
-import './house.css'
+import gotService from '../services/gotService';
+
+import ItemList from '../components/itemList';
+import ItemDetails, {Field} from '../components/itemDetails';
+import RowBlock from '../components/rowBlock';
 
 export default function HousePage() {
     let gotservice = new gotService();
@@ -20,11 +20,11 @@ export default function HousePage() {
         <ItemDetails
             itemId={selectedHouse}
             getData={gotservice.getHouse} >
-                <Field field='region' label='Region'/>
-                <Field field='words' label='Words'/>
-                <Field field='titles' label='titles'/>
-                <Field field='ancestralWeapons' label='Weapons'/>
-            </ItemDetails>
+            <Field field='region' label='Region'/>
+            <Field field='words' label='Words'/>
+            <Field field='titles' label='titles'/>
+            <Field field='ancestralWeapons' label='Weapons'/>
+        </ItemDetails>
     )
 
     return (
